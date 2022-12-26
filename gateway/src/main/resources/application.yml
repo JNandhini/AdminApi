@@ -1,0 +1,35 @@
+server:
+    port: 8081
+spring:
+    application:
+        name:
+            API_GATEWAY
+    cloud:
+        gateway:
+            routes:
+                - id: userservices
+                  uri: http://localhost:8083/
+                  predicates:
+                     - Path=/**
+                - id: roleservices
+                  uri: http://localhost:8085/
+                  predicates:
+                     - Path=/**
+                - id: locationservices
+                  uri: http://localhost:8089/
+                  predicates:
+                     - Path=/**
+     
+
+
+
+
+
+
+
+                
+                # - id: courseModule
+                #   uri: lb://course-service
+                #   predicates:
+                #     - Path=/course/**
+        
