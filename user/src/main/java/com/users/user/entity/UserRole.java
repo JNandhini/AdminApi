@@ -6,7 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-// @Table(name="user_account")
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
