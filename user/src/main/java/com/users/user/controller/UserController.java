@@ -15,7 +15,7 @@ import com.users.user.entity.User;
 import com.users.user.entity.UserRole;
 import com.users.user.services.UserService;
 @RestController
-@RequestMapping("")
+@RequestMapping("/user")
 public class UserController {
 UserService userService;
     public UserController(UserService userService) {

@@ -20,6 +20,6 @@ public class User {
     public String is_admin;
     public String login_password;//
     public Integer role_id;
-    public String  registration_date;//
+    public String  registration_date;//         
    
 }

@@ -10,15 +10,19 @@ spring:
                 - id: userservices
                   uri: http://localhost:8083/
                   predicates:
-                     - Path=/**
+                     - Path=/user/*
                 - id: roleservices
                   uri: http://localhost:8085/
                   predicates:
-                     - Path=/**
+                     - Path=/role/*
                 - id: locationservices
                   uri: http://localhost:8089/
                   predicates:
-                     - Path=/**
+                     - Path=/location/*
+                - id: jobservices
+                  uri: http://localhost:8084/
+                  predicates:
+                     - Path=/job/*
      
 
 

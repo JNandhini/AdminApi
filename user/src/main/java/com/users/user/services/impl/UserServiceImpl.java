@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserRole> getAll()
     {
-        String sql=String.format("select p.*,c.role_name AS role_name from user_account p ,job_role c where p.role_id=c.role_id");
+        String sql=String.format("select p.*,c.role_name AS role_name  from user_account p ,job_role c where p.role_id=c.role_id");
         List<UserRole> list =em.createNativeQuery(sql,UserRole.class).getResultList();
         return  list;
     }
